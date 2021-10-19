@@ -2,3 +2,19 @@
   font-family: sans-serif;
   text-align: center;
 }
+body {
+  background-color: grey;
+}
+.App {
+  font-family: cursive;
+}
+h1 {
+  color: aquamarine;
+  font-size: 320%;
+}
+p {
+  font-size: 150%;
+}
+span {
+  background-color: rgb(240, 216, 184);
+}

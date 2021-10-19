@@ -1,18 +1,18 @@
 import "./styles.css";
 import React, { useState } from "react";
 
-var headingText = "Inside Outt";
+var headingText = "emoji search";
 var emojiDictionary = {
-  "😊": "Smiling Face with Smiling Eyes",
-  "😐": "Neutral Face",
-  "🔥": "Fire",
-  "🐱": "Cat Face",
-  "🎂": "Birthday Cake",
-  "💓": "Beating Heart",
-  "🐬": "Dolphin",
-  "💡": "Object",
-  "🎌": "Flag",
-  "💯": "100Point"
+  "😊": "Smiling Face with closed eyes",
+  "😐": "Null Face",
+  "😁": "laughing face",
+  "😍": "smiling face with heart eyes",
+  "😒": "unamused face",
+  "😎": "smiling face with sunglasses",
+  "🤣": "rofl",
+  "😢": "crying face",
+  "😉": "winking face",
+  "😘": "face blowing a kiss"
 };
 var emojiWeKnow = Object.keys(emojiDictionary);
 
@@ -33,10 +33,13 @@ export default function App() {
   return (
     <div className="App">
       <h1>{headingText}</h1>
-      <p>Search the meaning of Emoji...</p>
+      <p>
+        Search the meaning of Emoji or click on an emoji given below as a
+        suggestion
+      </p>
       <input onChange={emojiInputHandler} />
-      <h2>Meaning :- {meaning}</h2>
-      <h3>Emoji We Knows</h3>
+      <h2>Meaning : {meaning}</h2>
+      <h3>Emoji available in our data base</h3>
       {emojiWeKnow.map(function (Emoji) {
         return (
           <span
